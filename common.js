@@ -1,11 +1,3 @@
-$(document).ready(function(){
-    $("body").on({
-        mouseenter: function(){
-            $(this).css("background-color", "gray");
-        },  
-    });    
-});
-
 function changeUrl(urlAddr) {
     var root = window.location.protocol+'//'+window.location.host+'/';
     //alert('path1='+ root);
