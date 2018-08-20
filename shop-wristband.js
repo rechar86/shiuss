@@ -165,14 +165,6 @@ function showTempate(pansaiData) {
 							<td>${order[6]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">送達日期</th>
-							<td>${order[7]}</td>
-						</tr>
-						<tr>
-							<th style="text-align:left">送達時間</th>
-							<td>${order[8]}</td>
-						</tr>
-						<tr>
 							<th style="text-align:left">地址</th>
 							<td>${order[9]}</td>
 						</tr>
