@@ -94,90 +94,90 @@ function showTempate(pansaiData) {
 							<th colspan="2" style=" border-left: 6px solid red;background-color: lightgrey;">產品明細</th>
 						</tr>
 						<tr>
-							<th style="text-align:left">A 熱帶風情畫(芒果慕斯)</th>
-							<td>${order[3]}</td>
+							<th style="text-align:left">手環系列 產品01</th>
+							<td>${order[17]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">B 綠晶靈傳奇(青蘋水晶蛋糕)</th>
-							<td>${order[4]}</td>
+							<th style="text-align:left">手環系列 產品02</th>
+							<td>${order[18]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">C 日耳曼森林(德式黑森林)</th>
-							<td>${order[5]}</td>
+							<th style="text-align:left">手環系列 產品03</th>
+							<td>${order[19]}</td>
 						</tr>						
 						<tr>
-							<th style="text-align:left">D 亞細亞之戀(港式金黃蛋糕)</th>
-							<td>${order[6]}</td>
+							<th style="text-align:left">手環系列 產品04</th>
+							<td>${order[20]}</td>
 						</tr>						
 						<tr>
-							<th style="text-align:left">E 義式圓舞曲(提拉米蘇捲)</th>
-							<td>${order[7]}</td>
+							<th style="text-align:left">手環系列 產品05</th>
+							<td>${order[21]}</td>
 						</tr>						
 						<tr>
-							<th style="text-align:left">F 濃情黑魔力(黑琳巧克力)</th>
-							<td>${order[8]}</td>
+							<th style="text-align:left">手環系列 產品06</th>
+							<td>${order[22]}</td>
 						</tr>						
 						<tr>
 							<th colspan="2" style=" border-left: 6px solid red;background-color: lightgrey;">小計/折扣/金額</th>
 						</tr>					
 						<tr>
 							<th style="text-align:left">合計數量</th>
-							<td>${order[17]}</td>
+							<td>${order[11]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">小計</th>
-							<td>${order[18]}</td>
+							<td>${order[12]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">折扣優惠</th>
-							<td>${order[19]}</td>
+							<td>${order[13]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">折扣後金額</th>
-							<td>${order[20]}</td>
+							<td>${order[14]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">運費</th>
-							<td>${order[21]}</td>
+							<td>${order[15]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">總金額</th>
-							<td>${order[22]}</td>
+							<td>${order[16]}</td>
 						</tr>
 						<tr>
 							<th colspan="2" style=" border-left: 6px solid red;background-color: lightgrey;">訂購人資訊</th>
 						</tr>
 						<tr>
 							<th style="text-align:left">訂購人/公司行號</th>
-							<td>${order[9]}</td>
+							<td>${order[3]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">手機</th>
-							<td>${order[10]}</td>
+							<td>${order[4]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">市內電話</th>
-							<td>${order[11]}</td>
+							<td>${order[5]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">電子郵件地址</th>
-							<td>${order[12]}</td>
+							<td>${order[6]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">送達日期</th>
-							<td>${order[13]}</td>
+							<td>${order[7]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">送達時間</th>
-							<td>${order[14]}</td>
+							<td>${order[8]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">地址</th>
-							<td>${order[15]}</td>
+							<td>${order[9]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">給師傅的悄悄話</th>
-							<td>${order[16]}</td>
+							<th style="text-align:left">給小巫的悄悄話</th>
+							<td>${order[10]}</td>
 						</tr>
 					</table>				
 					`
