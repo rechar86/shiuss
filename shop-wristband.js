@@ -73,10 +73,10 @@ $( function() {
 
 
 
-function showTempate(pansaiData) {
+function showTempate(data) {
 	return `
 		<div>
-			${pansaiData.map(function(order) {
+			${data.map(function(order) {
 				return `
 				    <table margin="0" data-role="table" data-mode="columntoggle" class="ui-responsive">
 						<tr>
@@ -180,10 +180,10 @@ function showTempate(pansaiData) {
 	`
 }
 
-function bindShop(pansaiData, order) {
+function bindShop(data, order) {
 	//alert(pansaiData);
 	document.getElementById("show").innerHTML = `
 		<h1> ${order} 您好, 您的訂單明細</h1>
-		${showTempate(pansaiData)}
+		${showTempate(data)}
 	`
 }
