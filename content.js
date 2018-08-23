@@ -52,9 +52,6 @@ function doSHIUSS_LINE2ME(){
  * 小巫
  */
 function getContentMe() {
-        // submit onclick disable btn
-        $("#btnSubmit").prop("disabled", true);
-
  		var formData = {
 			'order_type' : 'SHIUSS_ME'
 		};
@@ -66,18 +63,15 @@ function getContentMe() {
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
 			success: function(json){
-                bindMe(json);
-                $("#btnSubmit").prop("disabled", false);//enable button
+				bindMe(json);
 			},
 			error: function(e){
-                alert('失敗:' + e);
-                $("#btnSubmit").prop("disabled", false);//enable button
+				alert('失敗:' + e);
 			}
 		})
 			// using the done promise callback
 			.done(function(data) {
-                //alert("送出完成");
-                $("#btnSubmit").prop("disabled", false);//enable button
+				//alert("送出完成");
 			})
 
 			// using the fail promise callback
@@ -85,8 +79,7 @@ function getContentMe() {
 
 				// show any errors
 				// best to remove for production
-                alert("失敗("+data + ")");
-                $("#btnSubmit").prop("disabled", false);//enable button
+				alert("失敗("+data + ")");
 			});
 
 		// stop the form from submitting the normal way and refreshing the page
