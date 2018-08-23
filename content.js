@@ -3,10 +3,7 @@
  * 小巫
  */
 function getContentMe() {
-        //alert("-----getContentMe------------");
-		// get the form data
-		// there are many ways to get this data using jQuery (you can use the class or id also)
-		var formData = {
+ 		var formData = {
 			'order_type' 		    : 'SHIUSS_ME'
 		};
 
