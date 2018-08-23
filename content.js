@@ -3,7 +3,7 @@
  * 小巫
  */
 function getContentMe() {
-    alert("-----getContentMe------------");
+        //alert("-----getContentMe------------");
 		// get the form data
 		// there are many ways to get this data using jQuery (you can use the class or id also)
 		var formData = {
@@ -17,7 +17,8 @@ function getContentMe() {
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
 			success: function(json){
-				bindMe(json, '');
+                alert(json);
+				bindMe(json);
 			},
 			error: function(e){
 				alert('失敗:' + e);
@@ -41,13 +42,13 @@ function getContentMe() {
 };
 
 
-function bindMe(data, order) {
+function bindMe(data) {
 	document.getElementById("content_me").innerHTML = `
         <img src="./slides/logo.jpg" width="10%"/>	
 		<p>
-			${data.map(function(order) {
+			${data.map(function(view) {
 				return `
-                    ${order[0]}
+                    ${view[0]}
 					`
 			}).join('')}
 		</p>
