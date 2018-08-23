@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<title>小巫手作舖</title>
+	<title>小巫手作舖 線上發送LINE私訊</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-Language" content="zh-tw" />
@@ -9,39 +9,14 @@
 	<meta name="description" content="小巫手作舖" />
   <script src="./lib/jquery-1.8.3.min.js"></script>
 	<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
-  <script src="./js/modernizr.js"></script>
-  <script defer src="./js/jquery.flexslider.js"></script>
-  <script src="common.js"></script>
+	<script src="common.js"></script>
+	<script src="content.js"></script>
   <link rel="Shortcut Icon" type="image/x-icon" href="./slides/logo.jpg" />
 	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="./css/demo.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="./css/flexslider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="./css/flexslider-rtl.css" type="text/css" media="screen" />
-	
 
 
 <style type="text/css">
-.flex-caption {
-  width: 96%;
-  padding: 2%;
-  left: 0;
-  bottom: 0;
-  background: rgba(0,0,0,.5);
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-  font-size: 14px;
-  line-height: 18px;
-}
-li.css a {
-  border-radius: 0;
-}
-
-#multiple_background_image{
-width:100%;
-height:500px;
-background-image: url(slides/wb01.jpg), url(slides/wb02.jpg),url(slides/wb03.jpg);
-}
-
 
 </style>
 <script type="text/javascript">
@@ -50,12 +25,12 @@ background-image: url(slides/wb01.jpg), url(slides/wb02.jpg),url(slides/wb03.jpg
 
 </head>
 
-<body class="loading">
+<body class="loading" onclick="getContentMe()">
   <div id="multiple_background_image"></div>
   <div id="page" data-role="page" class="type-interior">
 	<!-- /header -->
 	<div data-role="header" data-theme="b">
-		<h1>小巫手作舖</h1>
+		<h1>小巫手作舖 線上發送LINE訊息</h1>
 		<a href="javaScript:void(0)" onclick="changeUrl('wristband.html')" data-icon="forward" data-direction="reverse">手環系列</a>
 		<h1 style="font-size: 12px;">				
 			  <a href="javaScript:void(0)" onclick="changeUrl('aboutme.html')"           data-direction="reverse" ><font color="orange">小巫</font></a>
@@ -64,13 +39,20 @@ background-image: url(slides/wb01.jpg), url(slides/wb02.jpg),url(slides/wb03.jpg
 		</h1>
 	</div>
 <!--content-->
-<div>
-  <ul>
-    <li>
-      <a href="#" onclick="changeUrl('wristband.html')"><img src="./slides/wb01.jpg" height="25%" width="25%"/></a>
-    </li>	            
-  </ul>
-</div>			
+	<!--content-->	
+	<div id="content" data-role="content">		
+			<div id="content_me"></div>
+			<div><p>有任何問題或建議, 都可以發送LINE訊息給我喔! </p></div>
+			<div id="line2me">
+					<form action="" method="GET">
+							<input type="text" class="form-control" name="name" placeholder="輸入您的大名">		
+							<input type="text" class="form-control" name="email"" placeholder="輸入您的電子信箱">		
+							<input type="text" class="form-control" name="mobile" placeholder="輸入您的手機">			
+							<textarea name="msg" placeholder="輸入您的建議或是詢問商品"></textarea>
+							<button type="submit" id="btnSubmit" onclick="doSHIUSS_LINE2ME()" class="btn btn-success">送出LINE訊息</button>
+					</form>
+			</div>
+	</div>				
 	<!-- footer -->
 	<div data-role="footer" data-theme="b">
 		<h3 style="font-size: 10px;"><a href="tel:0918147776" class="ui-link-inherit">訂購專線 0918-147-776</a><//h3>

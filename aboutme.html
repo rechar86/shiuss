@@ -34,11 +34,22 @@
 		<h1 style="font-size: 12px;">				
 			  <a href="javaScript:void(0)" onclick="changeUrl('aboutme.html')"           data-direction="reverse" ><font color="orange">小巫</font></a>
 			．<a href="javaScript:void(0)" onclick="directUrl('http://line.me/ti/p/%40vhb2170y')"                          data-direction="reverse" target="_blank"><font color="00B900">加LINE好友</font></a>
+			．<a href="javaScript:void(0)" onclick="changeUrl('line2me.html')"           data-direction="reverse" ><font color="yellow">私訊給我</font></a>
 		</h1>
 	</div>
 <!--content-->
 <div id="content" data-role="content">
 		<div id="content_me"></div>
+		<div><p>有任何問題或建議, 都可以發送LINE訊息給我喔! </p></div>
+		<div id="line2me">
+				<form action="" method="GET">
+						<input type="text" class="form-control" name="name" placeholder="輸入您的大名">		
+						<input type="text" class="form-control" name="email"" placeholder="輸入您的電子信箱">		
+						<input type="text" class="form-control" name="mobile" placeholder="輸入您的手機">			
+						<textarea name="msg" placeholder="輸入您的建議或是詢問商品"></textarea>
+						<button type="submit" id="btnSubmit" onclick="doSHIUSS_LINE2ME()" class="btn btn-success">送出LINE訊息</button>
+				</form>
+		</div>			
 </div>				
 	<!-- footer -->
 	<div data-role="footer" data-theme="b">
