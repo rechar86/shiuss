@@ -4,7 +4,7 @@
  */
 function getContentMe() {
  		var formData = {
-			'order_type' 		    : 'SHIUSS_ME'
+			'order_type' : 'SHIUSS_ME'
 		};
 
 		// process the form
@@ -14,7 +14,6 @@ function getContentMe() {
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
 			success: function(json){
-                alert(json);
 				bindMe(json);
 			},
 			error: function(e){
