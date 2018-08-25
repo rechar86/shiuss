@@ -52,7 +52,13 @@ li.css a {
         }
       });
     });
-	
+  
+  function switch2PlaneView(){
+    //alert("---switch_view--");
+    $('#f1').removeAttr("class");
+    $('#f1').removeAttr("style");
+    $('#f1').removeAttr("id");
+  }
 
   </script>
 
@@ -73,6 +79,7 @@ li.css a {
     </h1>
 	</div>
 <!--content-->
+<a href="#" onclick="switch2PlaneView()">商品檢視切換(若您看不到圖片輪播,請點我切換)</a>
 <div class="flexslider" id="f1" style="direction:rtl">
   <ul class="slides">
     <li>
