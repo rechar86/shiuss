@@ -53,11 +53,20 @@ li.css a {
       });
     });
   
+    var viewstate = 1;
   function switch2PlaneView(){
     //alert("---switch_view--");
-    $('#f1').removeAttr("class");
-    $('#f1').removeAttr("style");
-    $('#f1').removeAttr("id");
+    if(viewstate == 1){
+      $('#f1').removeAttr("class");
+      $('#f1').removeAttr("style");
+      $('#f1').removeAttr("id");
+      viewstate = 2;
+    }
+    else{
+      changeUrl('wristband.html');
+      viewstate = 1;
+    }
+
   }
 
   </script>
@@ -83,39 +92,39 @@ li.css a {
 <div class="flexslider" id="f1" style="direction:rtl">
   <ul class="slides">
     <li>
-      <img src="./slides/wb01.jpg" />
+      <img src="./slides/wb01.jpg" with="50"/>
       <p class="flex-caption"><strong>手 環01 特 價 NT$100 </strong></br>產品說明01</p>
     </li>	
-	<li>
-      <img src="./slides/wb02.jpg" />
+	  <li>
+      <img src="./slides/wb02.jpg"  with="50" />
       <p class="flex-caption"><strong>手 環02 特 價 NT$100 </strong></br>產品說明02</p>
     </li>
     <li>
-      <img src="./slides/wb03.jpg" />
+      <img src="./slides/wb03.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環03 特 價 NT$100 </strong></br>產品說明03</p>
     </li>
     <li>
-      <img src="./slides/wb04.jpg" />
+      <img src="./slides/wb04.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環04 特 價 NT$100 </strong></br>產品說明04</p>
     </li>
     <li>
-      <img src="./slides/wb05.jpg" />
+      <img src="./slides/wb05.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環05 特 價 NT$100 </strong></br>產品說明05</p>
     </li>
     <li>
-      <img src="./slides/wb06.jpg" />
+      <img src="./slides/wb06.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環06 特 價 NT$100 </strong></br>產品說明06</p>
     </li>
     <li>
-      <img src="./slides/wb07.jpg" />
+      <img src="./slides/wb07.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環07 特 價 NT$100 </strong></br>產品說明07</p>
     </li>
     <li>
-      <img src="./slides/wb08.jpg" />
+      <img src="./slides/wb08.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環08 特 價 NT$100 </strong></br>產品說明08</p>
     </li>
     <li>
-      <img src="./slides/wb09.jpg" />
+      <img src="./slides/wb09.jpg"  with="50"/>
       <p class="flex-caption"><strong>手 環09 特 價 NT$100 </strong></br>產品說明09</p>
     </li>            
   </ul>
